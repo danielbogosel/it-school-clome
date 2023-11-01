@@ -88,14 +88,17 @@ p {
   color: var(--text-dark);
 }
 
+/*Clase reutilizabile*/
+.container {
+  min-width: 320px;
+  max-width: 1200px;
+  margin: auto;
+
+}
+
 /*Stilizarea meniului de navigare*/
 nav {
   background-color: var(--bg-primary);
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
   padding: var(--spaceing-medium);
 }
 
@@ -136,10 +139,24 @@ nav .secondary-menu {
   display: flex;
   flex-direction: column;
   background-color: var(--bg-dark);
-
+  padding: var(--spacing-small);
+  
   position: absolute;
+  top:100%;
+
+  display: none;
 }
 
 nav a:hover {
  color: var(--text-secondary);
+}
+
+.extended-menu:hover .secondary-menu {
+  display: block;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
