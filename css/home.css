@@ -75,16 +75,22 @@
   margin: var(--spacing-large);
 }
 
+.items-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: var(--spacing-large);
+}
+
 .item {
   width: calc(100%/3);
 
-   margin-bottom: 16px;
-   padding-left: 8px;
-   padding-right: 8px;
+  padding-left: var(--spacing-small);
+  padding-right: var(--spacing-small);
+  margin-bottom: var(--spaceing-medium);
 }
 
 .courses .content {
-  border: 1px solid grey;
+  border: 1px solid #ddd;
   border-radius: 4px;
   padding: 16px 8px 4px 8px;
   height: 100%;
@@ -95,11 +101,11 @@
   font-weight: normal;
 }
 
-.courses .material-symbols-outlined{
+.courses .material-symbols-outlined {
   font-size: 14px;
 }
 
-.courses .hilight-area{
+.courses .hilight-area {
   background-color: #fbb44c;
   padding: 2px;
 }
@@ -111,10 +117,7 @@
   margin-top: 2rem;
 }
 
-.items-container {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 
 @media (max-width:992px) {
   .item {
@@ -127,4 +130,27 @@
   .item {
     width: 100%;
   }
+}
+
+.about-it-school {
+  background-color: var(--bg-secondary);
+  padding-top: var(--spacing-large);
+}
+
+.about-it-school h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-large);
+}
+
+.about-it-school p {
+  text-align: center;
+  margin-bottom: var(--spacing-large);
+}
+
+.about-it-school img {
+  width: 100%;
+}
+
+.partners img:hover {
+  filter: grayscale(0);
 }
