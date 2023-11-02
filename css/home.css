@@ -34,7 +34,7 @@
   height: 24px;
   position: relative;
   top: var(--spaceing-tiny);
-  margin-left:var(--spaceing-medium);
+  margin-left: var(--spaceing-medium);
 }
 
 .welcome .container {
@@ -45,26 +45,86 @@
   .welcome a {
     display: none;
   }
- 
+
   .welcome img {
     display: block;
     margin: var(--spaceing-medium);
   }
 
   h1 {
-  
+
     font-size: 2.5rem;
   }
-  
+
   h2 {
     font-size: 1.5rem;
   }
-  
-  h3 {
-    font-size: 1rem;
-  }
-  
+
   p {
     font-size: var(--fs-small);
+  }
+}
+
+/*Sectiune cursuri*/
+.courses {
+  padding: 16px 0;
+}
+
+.courses h2 {
+  text-align: center;
+  margin: var(--spacing-large);
+}
+
+.item {
+  width: calc(100%/3);
+
+   margin-bottom: 16px;
+   padding-left: 8px;
+   padding-right: 8px;
+}
+
+.courses .content {
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 16px 8px 4px 8px;
+  height: 100%;
+}
+
+.courses h3 {
+  color: var(--text-primary);
+  font-weight: normal;
+}
+
+.courses .material-symbols-outlined{
+  font-size: 14px;
+}
+
+.courses .hilight-area{
+  background-color: #fbb44c;
+  padding: 2px;
+}
+
+.courses .decoration {
+  width: 98%;
+  background-color: var(--button-color);
+  height: 3px;
+  margin-top: 2rem;
+}
+
+.items-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width:992px) {
+  .item {
+    width: 50%;
+  }
+
+}
+
+@media (max-width:768px) {
+  .item {
+    width: 100%;
   }
 }
