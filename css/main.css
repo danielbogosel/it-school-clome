@@ -93,13 +93,15 @@ p {
   min-width: 320px;
   max-width: 1200px;
   margin: auto;
-
 }
 
 /*Stilizarea meniului de navigare*/
 nav {
   background-color: var(--bg-primary);
   padding: var(--spaceing-medium);
+  position: fixed;
+  top:0;
+  width: 100%;
 }
 
 nav img {
@@ -139,7 +141,6 @@ nav .secondary-menu {
   display: flex;
   flex-direction: column;
   background-color: var(--bg-dark);
-  padding: var(--spacing-small);
   
   position: absolute;
   top:100%;
@@ -159,4 +160,41 @@ nav .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+nav .material-symbols-outlined {
+  color: white;
+}
+
+nav .menu{
+  display: none;
+}
+
+@media (max-width: 576px) {
+  nav .link-list {
+    /* display: none; */
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    top: 92px;
+    left: 0;
+
+    background-color: var(--bg-dark);
+    width: 100%;
+  }
+
+  nav .menu{
+    display: block;
+    cursor: pointer;
+  }
+
+  nav .arrow-drop-down{
+    display: none;
+  }
+
+  .extended-menu:hover .secondary-menu {
+    display: none;
+  }
+
 }
