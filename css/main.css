@@ -196,5 +196,30 @@ nav .menu{
   .extended-menu:hover .secondary-menu {
     display: none;
   }
+}
 
+.items-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: var(--spacing-large);
+}
+
+.item {
+  width: calc(100%/3);
+
+  padding-left: var(--spacing-small);
+  padding-right: var(--spacing-small);
+  margin-bottom: var(--spaceing-medium);
+}
+
+@media (max-width:992px) {
+  .item {
+    width: 50%;
+  }
+}
+
+@media (max-width:768px) {
+  .item {
+    width: 100%;
+  }
 }
