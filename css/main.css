@@ -224,3 +224,15 @@ nav .menu{
     width: 100%;
   }
 }
+
+footer{
+  background-color: var(--bg-dark);
+  
+}
+
+footer p{
+  color: var(--bg-light);
+  font-size: var(--fs-small);
+  text-align: center;
+  padding: var(--spaceing-medium) 0;
+}
