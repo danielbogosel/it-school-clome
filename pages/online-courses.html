@@ -1,31 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
+<head>
+  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/corses.css">
+    <link rel="stylesheet" href="../css/courses.css">
     <title>IT School Clone </title>
-  </head>
+</head>
 <body>
   <nav>
-    <a href="../index.html"><img src="../images/itschool-logo.png" alt="Loggo ITschool"></a>
-    <ul>
-      <li><a href="../pages/online-courses.html">Cursuri Online</a></li>
-      <li class="extended-menu"><a href="../pages/trainers.html">
-        Despre noi 
-        <span class="material-symbols-outlined arrow-drop-down">arrow_drop_down</span>
-      </a>
-    </li> 
-      <li><a href="../pages/contact.html">Contact</a></li> 
-    </ul>
+    <div class="container">
+      <a href="../index.html"><img src="/images/itschool-logo.png" alt="Loggo ITschool"></a>
+      <span class="material-symbols-outlined menu">menu</span>
+      <ul class="link-list">
+        <li><a href="online-courses.html">Cursuri Online</a></li>
+        <li class="extended-menu">
+          <a href="trainers.html" class="about-us-link">
+            Despre noi
+            <span class="material-symbols-outlined arrow-drop-down">arrow_drop_down</span>
+          </a>
+          <ul class="secondary-menu">
+            <li><a href="../index.html">IT School</a></li>
+            <li><a href="trainers.html">Despre Noi</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <h1>Cursuri Online</h1>
+  <section class="welcome-courses">
+    <div class="container">
+      <h1>Cursuri IT Online, live</h1>
+    </div>
+  </section>
   
 </body>
 </html>

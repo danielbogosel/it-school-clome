@@ -81,7 +81,7 @@ h2 {
 }
 
 h3 {
-  columns: var(--text-secondary);
+  color: var(--text-secondary);
 }
 
 p {

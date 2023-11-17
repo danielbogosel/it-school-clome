@@ -1,0 +1,90 @@
+.welcome{
+  background-color: var(--bg-primary);
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.welcome h1{
+  text-align: center;
+  color:var(--text-light);
+}
+
+.trainers .trainers-container{
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: var(--spacing-large);
+}
+
+.trainers .trainer-wrapper{
+  width: 25%;
+  padding: 0 var(--spacing-small);
+
+}
+
+.trainers .card{
+  width: 100%;
+  min-height: 350px;
+  
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: var(--spacing-small);
+  margin-top:calc(2 * var(--spacing-large));
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.trainers .photo{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin-top: -80px;
+}
+
+.trainers img{
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  filter: grayscale(100%);
+}
+
+
+.trainers h3{
+  font-size: var(--fs-large);
+  font-weight: 400;
+  text-align: center;
+  background-color: rgba(20, 30, 76, 0.9);
+  padding: var(--spacing-small);
+  width: 95%;
+  border-radius: 5px;
+  opacity: 95%;
+  margin-bottom: var(--spaceing-medium);
+  padding: var(--spacing-tiny);
+  margin-top: -25px;
+  z-index: 1;
+}
+
+@media (max-width: 992px) {
+  .trainers .trainer-wrapper{
+    width: calc(100% / 3);
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .trainers .trainer-wrapper{
+    width: 50%;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .trainers .trainer-wrapper{
+    width:100%;
+  }
+
+}
