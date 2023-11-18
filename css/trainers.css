@@ -65,7 +65,7 @@
   margin-bottom: var(--spaceing-medium);
   padding: var(--spacing-tiny);
   margin-top: -25px;
-  z-index: 1;
+
 }
 
 @media (max-width: 992px) {
