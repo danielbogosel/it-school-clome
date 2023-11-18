@@ -94,6 +94,10 @@
   margin: var(--spacing-large) var(--spacing-small);
 }
 
+footer p{
+  margin-bottom: 0;
+}
+
 
 @media(max-width: 992px) {
   .courses .course-wrapper{
