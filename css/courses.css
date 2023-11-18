@@ -31,7 +31,7 @@
 
 .courses .courses-container{
   display: flex;
-  text-wrap: no-wrap;
+  flex-wrap: wrap;
 }
 
 .courses .course-wrapper{
@@ -95,13 +95,14 @@
 }
 
 
-@media (max-width: 992px) {
+@media(max-width: 992px) {
   .courses .course-wrapper{
     width: 50%;
   }
+  
 }
 
-@media (max-width: 796px) {
+@media(max-width: 796px) {
   .courses .course-wrapper{
     width:100%;
   }
