@@ -14,7 +14,7 @@
 .trainers .trainers-container{
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: var(--spacing-large);
+  padding-bottom: var(--spacing-xl);
 }
 
 .trainers .trainer-wrapper{
@@ -30,7 +30,7 @@
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: var(--spacing-small);
-  margin-top:calc(2 * var(--spacing-large));
+  margin-top:calc(2 * var(--spacing-xl));
 
   display: flex;
   flex-direction: column;
