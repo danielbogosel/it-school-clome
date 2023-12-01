@@ -173,7 +173,7 @@ nav .menu{
 
 @media (max-width: 576px) {
   nav .link-list {
-    /* display: none; */
+    display: none;
     position: fixed;
     flex-direction: column;
     align-items: center;
